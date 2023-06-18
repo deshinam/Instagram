@@ -64,9 +64,9 @@ final class ProfileHeaderCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configure(with data: ProfileHeaderData) {
-        nameLabel.text = data.userName
-        userDetailsLabel.text = data.userDetails
-        avatarImageView.image = data.avatar
+    func configure(with viewModel: ProfileHeaderViewModel) {
+        nameLabel.text = viewModel.getUserName()
+        userDetailsLabel.text = viewModel.getUserDetails()
+        avatarImageView.image = viewModel.getAvatar()
     }
 }

@@ -1,10 +1,12 @@
+import AlamofireImage
 import UIKit
 
 final class ProfilePostsCell: UICollectionViewCell {
+    
     static let reuseIdentifier = "ProfilePostsCell"
     var imageView: UIImageView = {
         let image = UIImageView()
-        image.contentMode = .scaleToFill
+        image.contentMode = .scaleAspectFill
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
@@ -26,7 +28,9 @@ final class ProfilePostsCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func configure(with data: PostData) {
-        imageView.image = data.image
+    func configure(with viewModel: ProfilePostViewModel) {
+        imageView.af.setImage(withURL: URL(string: "https://image.shutterstock.com/image-photo/redirected-1000w-1105302317.jpg")!)
+
+//        imageView.image = viewModel.getImage()
     }
 }

@@ -19,5 +19,7 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Identify yourself</string>
 </dict>
 </plist>

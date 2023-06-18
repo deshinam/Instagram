@@ -14,6 +14,20 @@
 		781707E429EB24DD00B81E8A /* InstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781707E329EB24DD00B81E8A /* InstagramTests.swift */; };
 		781707FD29EB29BF00B81E8A /* ProfileHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781707FC29EB29BF00B81E8A /* ProfileHeaderCell.swift */; };
 		781707FF29EB389800B81E8A /* ProfilePostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781707FE29EB389800B81E8A /* ProfilePostsCell.swift */; };
+		783520222A3F67A4004E1ED1 /* UserAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783520212A3F67A4004E1ED1 /* UserAuthentication.swift */; };
+		789E3C672A04243C004D52EC /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789E3C662A04243C004D52EC /* ProfileHeaderViewModel.swift */; };
+		789E3C692A044B2F004D52EC /* ProfilePostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789E3C682A044B2F004D52EC /* ProfilePostViewModel.swift */; };
+		789E3C6C2A044BFC004D52EC /* ProfileHeaderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789E3C6B2A044BFC004D52EC /* ProfileHeaderData.swift */; };
+		789E3C6E2A044C20004D52EC /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789E3C6D2A044C20004D52EC /* PostData.swift */; };
+		789E3C702A044C4F004D52EC /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789E3C6F2A044C4F004D52EC /* NetworkManager.swift */; };
+		789E3C722A044C6D004D52EC /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789E3C712A044C6D004D52EC /* ProfileViewModel.swift */; };
+		78CD6C262A24BD9000A76865 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CD6C252A24BD9000A76865 /* AppCoordinator.swift */; };
+		78CD6C292A24BDBE00A76865 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 78CD6C282A24BDBE00A76865 /* Swinject */; };
+		78CD6C2B2A24BE7C00A76865 /* NavBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CD6C2A2A24BE7C00A76865 /* NavBarViewController.swift */; };
+		78CD6C2D2A24CD2A00A76865 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CD6C2C2A24CD2A00A76865 /* FeedViewController.swift */; };
+		78CD6C332A24D50B00A76865 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 78CD6C322A24D50B00A76865 /* AlamofireImage */; };
+		78CD6C352A24EC1F00A76865 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CD6C342A24EC1F00A76865 /* ProfileCoordinator.swift */; };
+		78CD6C372A24EE2000A76865 /* FeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CD6C362A24EE2000A76865 /* FeedCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +59,18 @@
 		781707E929EB24DD00B81E8A /* InstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		781707FC29EB29BF00B81E8A /* ProfileHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderCell.swift; sourceTree = "<group>"; };
 		781707FE29EB389800B81E8A /* ProfilePostsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostsCell.swift; sourceTree = "<group>"; };
+		783520212A3F67A4004E1ED1 /* UserAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthentication.swift; sourceTree = "<group>"; };
+		789E3C662A04243C004D52EC /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
+		789E3C682A044B2F004D52EC /* ProfilePostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostViewModel.swift; sourceTree = "<group>"; };
+		789E3C6B2A044BFC004D52EC /* ProfileHeaderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderData.swift; sourceTree = "<group>"; };
+		789E3C6D2A044C20004D52EC /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		789E3C6F2A044C4F004D52EC /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		789E3C712A044C6D004D52EC /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		78CD6C252A24BD9000A76865 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		78CD6C2A2A24BE7C00A76865 /* NavBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarViewController.swift; sourceTree = "<group>"; };
+		78CD6C2C2A24CD2A00A76865 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		78CD6C342A24EC1F00A76865 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		78CD6C362A24EE2000A76865 /* FeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78CD6C292A24BDBE00A76865 /* Swinject in Frameworks */,
+				78CD6C332A24D50B00A76865 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +105,6 @@
 			children = (
 				781707CB29EB24DC00B81E8A /* Instagram */,
 				781707E229EB24DD00B81E8A /* InstagramTests */,
-				781707EC29EB24DD00B81E8A /* InstagramUITests */,
 				781707CA29EB24DC00B81E8A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,11 +124,11 @@
 			children = (
 				781707CC29EB24DC00B81E8A /* AppDelegate.swift */,
 				781707CE29EB24DC00B81E8A /* SceneDelegate.swift */,
-				781707D029EB24DC00B81E8A /* ProfileViewController.swift */,
+				78CD6C2E2A24CD5300A76865 /* Flows */,
+				789E3C6A2A044BE8004D52EC /* Models */,
 				781707D529EB24DD00B81E8A /* Assets.xcassets */,
 				781707DA29EB24DD00B81E8A /* Info.plist */,
-				781707FC29EB29BF00B81E8A /* ProfileHeaderCell.swift */,
-				781707FE29EB389800B81E8A /* ProfilePostsCell.swift */,
+				7835201F2A3F6779004E1ED1 /* NNetwork */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -114,11 +141,64 @@
 			path = InstagramTests;
 			sourceTree = "<group>";
 		};
-		781707EC29EB24DD00B81E8A /* InstagramUITests */ = {
+		7835201F2A3F6779004E1ED1 /* NNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				789E3C6F2A044C4F004D52EC /* NetworkManager.swift */,
 			);
-			path = InstagramUITests;
+			path = NNetwork;
+			sourceTree = "<group>";
+		};
+		783520202A3F678E004E1ED1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				78CD6C252A24BD9000A76865 /* AppCoordinator.swift */,
+				78CD6C2A2A24BE7C00A76865 /* NavBarViewController.swift */,
+				783520212A3F67A4004E1ED1 /* UserAuthentication.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		789E3C6A2A044BE8004D52EC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				789E3C6B2A044BFC004D52EC /* ProfileHeaderData.swift */,
+				789E3C6D2A044C20004D52EC /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		78CD6C2E2A24CD5300A76865 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				783520202A3F678E004E1ED1 /* App */,
+				78CD6C302A24CD6B00A76865 /* ProfileFlow */,
+				78CD6C2F2A24CD6100A76865 /* FeedFlow */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		78CD6C2F2A24CD6100A76865 /* FeedFlow */ = {
+			isa = PBXGroup;
+			children = (
+				78CD6C2C2A24CD2A00A76865 /* FeedViewController.swift */,
+				78CD6C362A24EE2000A76865 /* FeedCoordinator.swift */,
+			);
+			path = FeedFlow;
+			sourceTree = "<group>";
+		};
+		78CD6C302A24CD6B00A76865 /* ProfileFlow */ = {
+			isa = PBXGroup;
+			children = (
+				781707D029EB24DC00B81E8A /* ProfileViewController.swift */,
+				789E3C662A04243C004D52EC /* ProfileHeaderViewModel.swift */,
+				781707FC29EB29BF00B81E8A /* ProfileHeaderCell.swift */,
+				781707FE29EB389800B81E8A /* ProfilePostsCell.swift */,
+				789E3C712A044C6D004D52EC /* ProfileViewModel.swift */,
+				789E3C682A044B2F004D52EC /* ProfilePostViewModel.swift */,
+				78CD6C342A24EC1F00A76865 /* ProfileCoordinator.swift */,
+			);
+			path = ProfileFlow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +217,10 @@
 			dependencies = (
 			);
 			name = Instagram;
+			packageProductDependencies = (
+				78CD6C282A24BDBE00A76865 /* Swinject */,
+				78CD6C322A24D50B00A76865 /* AlamofireImage */,
+			);
 			productName = Instagram;
 			productReference = 781707C929EB24DC00B81E8A /* Instagram.app */;
 			productType = "com.apple.product-type.application";
@@ -209,6 +293,10 @@
 				Base,
 			);
 			mainGroup = 781707C029EB24DC00B81E8A;
+			packageReferences = (
+				78CD6C272A24BDBE00A76865 /* XCRemoteSwiftPackageReference "Swinject" */,
+				78CD6C312A24D50B00A76865 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = 781707CA29EB24DC00B81E8A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -250,11 +338,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78CD6C262A24BD9000A76865 /* AppCoordinator.swift in Sources */,
 				781707FF29EB389800B81E8A /* ProfilePostsCell.swift in Sources */,
+				789E3C6E2A044C20004D52EC /* PostData.swift in Sources */,
+				789E3C702A044C4F004D52EC /* NetworkManager.swift in Sources */,
 				781707FD29EB29BF00B81E8A /* ProfileHeaderCell.swift in Sources */,
+				78CD6C2B2A24BE7C00A76865 /* NavBarViewController.swift in Sources */,
+				78CD6C2D2A24CD2A00A76865 /* FeedViewController.swift in Sources */,
 				781707D129EB24DC00B81E8A /* ProfileViewController.swift in Sources */,
+				783520222A3F67A4004E1ED1 /* UserAuthentication.swift in Sources */,
+				78CD6C372A24EE2000A76865 /* FeedCoordinator.swift in Sources */,
 				781707CD29EB24DC00B81E8A /* AppDelegate.swift in Sources */,
+				789E3C6C2A044BFC004D52EC /* ProfileHeaderData.swift in Sources */,
+				789E3C722A044C6D004D52EC /* ProfileViewModel.swift in Sources */,
 				781707CF29EB24DC00B81E8A /* SceneDelegate.swift in Sources */,
+				789E3C692A044B2F004D52EC /* ProfilePostViewModel.swift in Sources */,
+				78CD6C352A24EC1F00A76865 /* ProfileCoordinator.swift in Sources */,
+				789E3C672A04243C004D52EC /* ProfileHeaderViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +673,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		78CD6C272A24BDBE00A76865 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		78CD6C312A24D50B00A76865 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		78CD6C282A24BDBE00A76865 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78CD6C272A24BDBE00A76865 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		78CD6C322A24D50B00A76865 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78CD6C312A24D50B00A76865 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 781707C129EB24DC00B81E8A /* Project object */;
 }

@@ -1,17 +1,28 @@
-
 import UIKit
 
-typealias DataSource = UICollectionViewDiffableDataSource<Section, Item>
-typealias Snapshot = NSDiffableDataSourceSnapshot<Section, Item>
+private typealias DataSource = UICollectionViewDiffableDataSource<Section, Item>
+private typealias Snapshot = NSDiffableDataSourceSnapshot<Section, Item>
+
+private enum Section: Hashable {
+    case header
+    case posts
+}
+
+private enum Item: Hashable {
+    case header(ProfileHeaderViewModel)
+    case post(ProfilePostViewModel)
+}
 
 class ProfileViewController: UIViewController {
     private var datasource: DataSource!
     private var collectionView: UICollectionView!
+    private var profileViewModel: ProfileViewModel = ProfileViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.setNavigationBarHidden(true, animated: false)
         setupCollectionView()
-
+        profileViewModel.loadData()
         configureDatasource()
     }
 
@@ -63,13 +74,13 @@ class ProfileViewController: UIViewController {
 
     private func cell(collectionView: UICollectionView, indexPath: IndexPath, item: Item) -> UICollectionViewCell {
         switch item {
-        case .header(let data):
+        case .header(let viewModel):
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProfileHeaderCell.reuseIdentifier, for: indexPath) as! ProfileHeaderCell
-            cell.configure(with: data)
+            cell.configure(with: viewModel)
             return cell
-        case .post(let data):
+        case .post(let viewModel):
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProfilePostsCell.reuseIdentifier, for: indexPath) as! ProfilePostsCell
-            cell.configure(with: data)
+            cell.configure(with: viewModel)
             return cell
         }
     }
@@ -81,43 +92,21 @@ class ProfileViewController: UIViewController {
 
     private func snapshot() -> Snapshot {
         var snapshot = Snapshot()
-        let demoProfileData = ProfileHeaderData(userName: "Deshina Masha",userDetails: "London", avatar: UIImage(named: "avatar")!, postCount: 5)
-        let demoProfilePhotos = [
-            Item.post(PostData(image: UIImage(named: "photo1")!)),
-            Item.post(PostData(image: UIImage(named: "photo2")!)),
-            Item.post(PostData(image: UIImage(named: "photo1")!)),
-            Item.post(PostData(image: UIImage(named: "photo2")!)),
-            Item.post(PostData(image: UIImage(named: "photo1")!)),
-            Item.post(PostData(image: UIImage(named: "photo2")!)),
-        ]
+        let demoProfileData = ProfileHeaderData(userName: "Deshina Masha",
+                                                userDetails: "London",
+                                                avatarURL: URL(filePath: "https://hips.hearstapps.com/hmg-prod/images/champagne-beach-espiritu-santo-island-vanuatu-royalty-free-image-1655672510.jpg"),
+                                                postCount: 5)
+        let profileHeaderViewModel = ProfileHeaderViewModel(with: demoProfileData)
 
-        snapshot.appendSections([.header])
-        snapshot.appendItems([.header(demoProfileData)], toSection: .header)
+        if let userDetails = profileViewModel.userDetailsViewModel {
+            snapshot.appendSections([.header])
+            snapshot.appendItems([.header(userDetails)], toSection: .header)
+        }
+
         snapshot.appendSections([.posts])
-        snapshot.appendItems(demoProfilePhotos, toSection: .posts)
+        let posts = profileViewModel.postsViewModels.map { Item.post($0) }
+        snapshot.appendItems(posts, toSection: .posts)
 
         return snapshot
     }
-}
-
-enum Section: Hashable {
-    case header
-    case posts
-}
-
-enum Item: Hashable {
-    case header(ProfileHeaderData)
-    case post(PostData)
-}
-
-struct ProfileHeaderData: Hashable {
-    let userName: String
-    let userDetails: String
-    let avatar: UIImage
-    let postCount: Int
-}
-
-struct PostData: Hashable {
-    let id = UUID()
-    let image: UIImage
 }
