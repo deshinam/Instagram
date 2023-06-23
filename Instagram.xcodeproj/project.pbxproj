@@ -15,6 +15,7 @@
 		781707FD29EB29BF00B81E8A /* ProfileHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781707FC29EB29BF00B81E8A /* ProfileHeaderCell.swift */; };
 		781707FF29EB389800B81E8A /* ProfilePostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781707FE29EB389800B81E8A /* ProfilePostsCell.swift */; };
 		783520222A3F67A4004E1ED1 /* UserAuthentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783520212A3F67A4004E1ED1 /* UserAuthentication.swift */; };
+		78972CDE2A3F75740090D54C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78972CDD2A3F75740090D54C /* SignInViewController.swift */; };
 		789E3C672A04243C004D52EC /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789E3C662A04243C004D52EC /* ProfileHeaderViewModel.swift */; };
 		789E3C692A044B2F004D52EC /* ProfilePostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789E3C682A044B2F004D52EC /* ProfilePostViewModel.swift */; };
 		789E3C6C2A044BFC004D52EC /* ProfileHeaderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789E3C6B2A044BFC004D52EC /* ProfileHeaderData.swift */; };
@@ -60,6 +61,7 @@
 		781707FC29EB29BF00B81E8A /* ProfileHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderCell.swift; sourceTree = "<group>"; };
 		781707FE29EB389800B81E8A /* ProfilePostsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostsCell.swift; sourceTree = "<group>"; };
 		783520212A3F67A4004E1ED1 /* UserAuthentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuthentication.swift; sourceTree = "<group>"; };
+		78972CDD2A3F75740090D54C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		789E3C662A04243C004D52EC /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
 		789E3C682A044B2F004D52EC /* ProfilePostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostViewModel.swift; sourceTree = "<group>"; };
 		789E3C6B2A044BFC004D52EC /* ProfileHeaderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderData.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				781707D529EB24DD00B81E8A /* Assets.xcassets */,
 				781707DA29EB24DD00B81E8A /* Info.plist */,
 				7835201F2A3F6779004E1ED1 /* NNetwork */,
+				78972CDD2A3F75740090D54C /* SignInViewController.swift */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				789E3C6C2A044BFC004D52EC /* ProfileHeaderData.swift in Sources */,
 				789E3C722A044C6D004D52EC /* ProfileViewModel.swift in Sources */,
 				781707CF29EB24DC00B81E8A /* SceneDelegate.swift in Sources */,
+				78972CDE2A3F75740090D54C /* SignInViewController.swift in Sources */,
 				789E3C692A044B2F004D52EC /* ProfilePostViewModel.swift in Sources */,
 				78CD6C352A24EC1F00A76865 /* ProfileCoordinator.swift in Sources */,
 				789E3C672A04243C004D52EC /* ProfileHeaderViewModel.swift in Sources */,

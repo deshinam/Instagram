@@ -23,9 +23,6 @@ class UserAuthentication {
             }
         } else {
             print("Biometry unavailable")
-//            let ac = UIAlertController(title: "Biometry unavailable", message: "Your device is not configured for biometric authentication.", preferredStyle: .alert)
-//            ac.addAction(UIAlertAction(title: "OK", style: .default))
-//            self.present(ac, animated: true)
         }
     }
 }

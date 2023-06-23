@@ -16,7 +16,16 @@ private enum Item: Hashable {
 class ProfileViewController: UIViewController {
     private var datasource: DataSource!
     private var collectionView: UICollectionView!
-    private var profileViewModel: ProfileViewModel = ProfileViewModel()
+    private var profileViewModel: ProfileViewModel
+
+    init(profileViewModel: ProfileViewModel) {
+        self.profileViewModel = profileViewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +41,7 @@ class ProfileViewController: UIViewController {
         collectionView.register(ProfilePostsCell.self, forCellWithReuseIdentifier: ProfilePostsCell.reuseIdentifier)
 
         view.addSubview(collectionView)
+        collectionView.delegate = self
     }
 
     private func createHeaderSection() -> NSCollectionLayoutSection {
@@ -108,5 +118,11 @@ class ProfileViewController: UIViewController {
         snapshot.appendItems(posts, toSection: .posts)
 
         return snapshot
+    }
+}
+
+extension ProfileViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        profileViewModel.actions.openPost()
     }
 }

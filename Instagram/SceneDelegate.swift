@@ -44,6 +44,10 @@ final class AppAssembly: Assembly {
             return FeedCoordinator(navigationController: navigationController, resolver: r)
         }
 
+        container.register(SignInViewController.self) { (r, navigationController: UINavigationController) in
+            return SignInViewController()
+        }
+
         container.register(NavBarViewController.self) { r, feedVC, profileVc in
             let vc = NavBarViewController(feedViewController: feedVC,
                                           profileViewController: profileVc)
