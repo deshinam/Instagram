@@ -158,8 +158,8 @@
             filePath = "Instagram/Flows/ProfileFlow/ProfileViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "getPosts()"
             landmarkType = "7">
             <Locations>
@@ -222,8 +222,8 @@
             filePath = "Instagram/Flows/ProfileFlow/ProfileViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "snapshot()"
             landmarkType = "7">
          </BreakpointContent>
@@ -238,8 +238,8 @@
             filePath = "Instagram/Flows/ProfileFlow/ProfileViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "getPosts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -254,8 +254,8 @@
             filePath = "Instagram/Flows/ProfileFlow/ProfileViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "snapshot()"
             landmarkType = "7">
          </BreakpointContent>
@@ -270,9 +270,9 @@
             filePath = "Instagram/Flows/ProfileFlow/ProfileViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
-            landmarkName = "cell(collectionView:indexPath:item:)"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "sectionFor(index:environment:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -446,13 +446,13 @@
             filePath = "Instagram/SceneDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "assemble(container:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "24F146E8-95E6-4E82-AFFE-4DF174E557DA - ea2e89739bef0cd"
+                  uuid = "24F146E8-95E6-4E82-AFFE-4DF174E557DA - ea2e89739bef003"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -462,24 +462,24 @@
                   urlString = "file:///Users/mariiadeshina/Desktop/Instagram/Instagram/SceneDelegate.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "236">
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "184">
                </Location>
                <Location
-                  uuid = "24F146E8-95E6-4E82-AFFE-4DF174E557DA - 3a65349d7a4844be"
+                  uuid = "24F146E8-95E6-4E82-AFFE-4DF174E557DA - 53e330c73cdc91df"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #4 (Swinject.Resolver, Instagram.FeedViewController, Instagram.ProfileViewController) -&gt; Instagram.NavBarViewController in Instagram.AppAssembly.assemble(container: Swinject.Container) -&gt; ()"
+                  symbolName = "closure #3 (Swinject.Resolver, __C.UINavigationController) -&gt; Instagram.FeedCoordinator in Instagram.AppAssembly.assemble(container: Swinject.Container) -&gt; ()"
                   moduleName = "Instagram"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/mariiadeshina/Desktop/Instagram/Instagram/SceneDelegate.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "68">
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "52">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -494,8 +494,8 @@
             filePath = "Instagram/SceneDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
             landmarkName = "assemble(container:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -510,10 +510,42 @@
             filePath = "Instagram/SceneDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "assemble(container:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3CCE5463-B7C7-4CE4-9BBF-8A95CFB4299A - ea2e89739bef003"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Instagram.AppAssembly.assemble(container: Swinject.Container) -&gt; ()"
+                  moduleName = "Instagram"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariiadeshina/Desktop/Instagram/Instagram/SceneDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "3CCE5463-B7C7-4CE4-9BBF-8A95CFB4299A - 53e330c73cdc91df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (Swinject.Resolver, __C.UINavigationController) -&gt; Instagram.FeedCoordinator in Instagram.AppAssembly.assemble(container: Swinject.Container) -&gt; ()"
+                  moduleName = "Instagram"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mariiadeshina/Desktop/Instagram/Instagram/SceneDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "52">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
