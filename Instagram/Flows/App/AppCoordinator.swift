@@ -27,7 +27,6 @@ class AppCoordinator {
               let profileVC = profileCoordinator.createViewController(),
               let navBarController = resolver.resolve(NavBarViewController.self,
                                                       arguments: feedVC, profileVC) else { return }
-        navigationController.set
         navigationController.pushViewController(navBarController, animated: false)
     }
 }

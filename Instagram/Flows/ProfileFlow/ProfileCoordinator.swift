@@ -2,14 +2,13 @@ import Swinject
 import UIKit
 
 class ProfileCoordinator {
-    private var navigationController: UINavigationController
+    private var profileViewController: UIViewController?
     private var resolver: Resolver
 
-    init(navigationController: UINavigationController, resolver: Resolver) {
-        self.navigationController = navigationController
+    init(resolver: Resolver) {
         self.resolver = resolver
     }
-
+    
     func createViewController() -> ProfileViewController? {
         guard let vc = resolver.resolve(ProfileViewController.self, argument: self as ProfileOutput) else {
             return nil
@@ -36,9 +35,12 @@ protocol ProfileOutput {
 
 extension ProfileCoordinator: ProfileOutput {
     func openPost() {
+        guard let profileVC = profileViewController else {
+            return
+        }
+        
         let postVC = UIViewController()
 
-        navigationController.pushViewController(postVC, animated: true)
-        print("Open post")
+        profileVC.present(postVC, animated: true)
     }
 }

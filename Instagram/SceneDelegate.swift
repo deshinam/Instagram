@@ -37,7 +37,7 @@ final class AppAssembly: Assembly {
         }
 
         container.register(ProfileCoordinator.self) { (r, navigationController: UINavigationController) in
-            return ProfileCoordinator(navigationController: navigationController, resolver: r)
+            return ProfileCoordinator(resolver: r)
         }
 
         container.register(FeedCoordinator.self) { (r, navigationController: UINavigationController) in
