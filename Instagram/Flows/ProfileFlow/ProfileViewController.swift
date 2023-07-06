@@ -123,6 +123,6 @@ class ProfileViewController: UIViewController {
 
 extension ProfileViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        present(UIViewController(), animated: true)
+        profileViewModel.actions.openPost()
     }
 }

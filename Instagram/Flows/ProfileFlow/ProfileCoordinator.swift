@@ -2,7 +2,7 @@ import Swinject
 import UIKit
 
 class ProfileCoordinator {
-    private var profileViewController: UIViewController?
+    private var profileViewController: ProfileViewController?
     private var resolver: Resolver
 
     init(resolver: Resolver) {
@@ -13,7 +13,8 @@ class ProfileCoordinator {
         guard let vc = resolver.resolve(ProfileViewController.self, argument: self as ProfileOutput) else {
             return nil
         }
-        return vc
+        profileViewController = vc
+        return profileViewController
     }
 }
 
