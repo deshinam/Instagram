@@ -24,5 +24,4 @@ class FeedViewController: UIViewController {
             label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
         ])
     }
-
 }

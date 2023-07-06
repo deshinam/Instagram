@@ -5,10 +5,13 @@ class ProfileViewModel {
     var userDetailsViewModel: ProfileHeaderViewModel?
     var postsViewModels: [ProfilePostViewModel] = []
 
-    let networkManager: NetworkManager
+    let networkManager: NetworkManagerProtocol
 
-    init(networkManager: NetworkManager = NetworkManager()) {
+    let actions: ProfileOutput
+
+    init(networkManager: NetworkManagerProtocol, actions: ProfileOutput) {
         self.networkManager = networkManager
+        self.actions = actions
     }
 
     func loadData() {
