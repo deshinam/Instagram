@@ -29,6 +29,8 @@
 		78CD6C332A24D50B00A76865 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 78CD6C322A24D50B00A76865 /* AlamofireImage */; };
 		78CD6C352A24EC1F00A76865 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CD6C342A24EC1F00A76865 /* ProfileCoordinator.swift */; };
 		78CD6C372A24EE2000A76865 /* FeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CD6C362A24EE2000A76865 /* FeedCoordinator.swift */; };
+		78D135582AA8EB2D00545BF7 /* DeeplinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D135572AA8EB2D00545BF7 /* DeeplinkManager.swift */; };
+		78F8EB492A7C02D0008B14C2 /* FeedPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F8EB482A7C02D0008B14C2 /* FeedPostCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		78CD6C2C2A24CD2A00A76865 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		78CD6C342A24EC1F00A76865 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
 		78CD6C362A24EE2000A76865 /* FeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoordinator.swift; sourceTree = "<group>"; };
+		78D135572AA8EB2D00545BF7 /* DeeplinkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkManager.swift; sourceTree = "<group>"; };
+		78F8EB482A7C02D0008B14C2 /* FeedPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,7 @@
 				78CD6C252A24BD9000A76865 /* AppCoordinator.swift */,
 				78CD6C2A2A24BE7C00A76865 /* NavBarViewController.swift */,
 				783520212A3F67A4004E1ED1 /* UserAuthentication.swift */,
+				78D135572AA8EB2D00545BF7 /* DeeplinkManager.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 			children = (
 				78CD6C2C2A24CD2A00A76865 /* FeedViewController.swift */,
 				78CD6C362A24EE2000A76865 /* FeedCoordinator.swift */,
+				78F8EB482A7C02D0008B14C2 /* FeedPostCell.swift */,
 			);
 			path = FeedFlow;
 			sourceTree = "<group>";
@@ -344,6 +350,7 @@
 				78CD6C262A24BD9000A76865 /* AppCoordinator.swift in Sources */,
 				781707FF29EB389800B81E8A /* ProfilePostsCell.swift in Sources */,
 				789E3C6E2A044C20004D52EC /* PostData.swift in Sources */,
+				78D135582AA8EB2D00545BF7 /* DeeplinkManager.swift in Sources */,
 				789E3C702A044C4F004D52EC /* NetworkManager.swift in Sources */,
 				781707FD29EB29BF00B81E8A /* ProfileHeaderCell.swift in Sources */,
 				78CD6C2B2A24BE7C00A76865 /* NavBarViewController.swift in Sources */,
@@ -352,6 +359,7 @@
 				783520222A3F67A4004E1ED1 /* UserAuthentication.swift in Sources */,
 				78CD6C372A24EE2000A76865 /* FeedCoordinator.swift in Sources */,
 				781707CD29EB24DC00B81E8A /* AppDelegate.swift in Sources */,
+				78F8EB492A7C02D0008B14C2 /* FeedPostCell.swift in Sources */,
 				789E3C6C2A044BFC004D52EC /* ProfileHeaderData.swift in Sources */,
 				789E3C722A044C6D004D52EC /* ProfileViewModel.swift in Sources */,
 				781707CF29EB24DC00B81E8A /* SceneDelegate.swift in Sources */,

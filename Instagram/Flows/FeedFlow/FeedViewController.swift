@@ -17,11 +17,13 @@ class FeedViewController: UIViewController {
     }
 
     private func setupVC() {
-        view.addSubview(label)
+        let cell = FeedPostsCell()
+        cell.configure()
+        view.addSubview(cell)
 
         NSLayoutConstraint.activate([
-            label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            cell.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            cell.centerYAnchor.constraint(equalTo: view.centerYAnchor),
         ])
     }
 }

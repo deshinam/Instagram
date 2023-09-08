@@ -3,18 +3,23 @@ import UIKit
 
 class ProfileCoordinator {
     private var profileViewController: ProfileViewController?
+    private var navigationController: UINavigationController
     private var resolver: Resolver
 
-    init(resolver: Resolver) {
+    init(resolver: Resolver, navigationController: UINavigationController) {
+        self.navigationController = navigationController
         self.resolver = resolver
     }
-    
-    func createViewController() -> ProfileViewController? {
+
+    func createViewController() -> UINavigationController? {
         guard let vc = resolver.resolve(ProfileViewController.self, argument: self as ProfileOutput) else {
             return nil
         }
         profileViewController = vc
-        return profileViewController
+        //navigationController.viewControllers = [vc]
+        navigationController.pushViewController(vc, animated: true)
+
+        return navigationController
     }
 }
 
@@ -41,7 +46,7 @@ extension ProfileCoordinator: ProfileOutput {
         }
         
         let postVC = UIViewController()
-
+        postVC.view.backgroundColor = .red
         profileVC.present(postVC, animated: true)
     }
 }

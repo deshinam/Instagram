@@ -18,8 +18,8 @@ class AppCoordinator {
     }
 
     func start() {
-        feedCoordinator = resolver.resolve(FeedCoordinator.self, argument: navigationController)
-        profileCoordinator = resolver.resolve(ProfileCoordinator.self, argument: navigationController)
+        feedCoordinator = resolver.resolve(FeedCoordinator.self, argument: UINavigationController())
+        profileCoordinator = resolver.resolve(ProfileCoordinator.self, argument: UINavigationController())
 
         guard let feedCoordinator = feedCoordinator,
               let feedVC = feedCoordinator.createViewController(),
