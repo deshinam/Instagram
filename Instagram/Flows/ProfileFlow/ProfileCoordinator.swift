@@ -11,15 +11,12 @@ class ProfileCoordinator {
         self.resolver = resolver
     }
 
-    func createViewController() -> UINavigationController? {
+    func createViewController() -> ProfileViewController? {
         guard let vc = resolver.resolve(ProfileViewController.self, argument: self as ProfileOutput) else {
             return nil
         }
         profileViewController = vc
-        //navigationController.viewControllers = [vc]
-        navigationController.pushViewController(vc, animated: true)
-
-        return navigationController
+        return vc
     }
 }
 
@@ -45,8 +42,7 @@ extension ProfileCoordinator: ProfileOutput {
             return
         }
         
-        let postVC = UIViewController()
-        postVC.view.backgroundColor = .red
-        profileVC.present(postVC, animated: true)
+        let postVC = PostViewController(nibName: "PostViewController", bundle: nil)
+        profileVC.navigationController?.pushViewController(postVC, animated: true)
     }
 }

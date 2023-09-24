@@ -31,6 +31,8 @@
 		78CD6C372A24EE2000A76865 /* FeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CD6C362A24EE2000A76865 /* FeedCoordinator.swift */; };
 		78D135582AA8EB2D00545BF7 /* DeeplinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D135572AA8EB2D00545BF7 /* DeeplinkManager.swift */; };
 		78F8EB492A7C02D0008B14C2 /* FeedPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F8EB482A7C02D0008B14C2 /* FeedPostCell.swift */; };
+		CD857FE52AC059C00007C2EE /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD857FE32AC059C00007C2EE /* PostViewController.swift */; };
+		CD857FE62AC059C00007C2EE /* PostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD857FE42AC059C00007C2EE /* PostViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		78CD6C362A24EE2000A76865 /* FeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoordinator.swift; sourceTree = "<group>"; };
 		78D135572AA8EB2D00545BF7 /* DeeplinkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkManager.swift; sourceTree = "<group>"; };
 		78F8EB482A7C02D0008B14C2 /* FeedPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPostCell.swift; sourceTree = "<group>"; };
+		CD857FE32AC059C00007C2EE /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		CD857FE42AC059C00007C2EE /* PostViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,7 @@
 		78CD6C2E2A24CD5300A76865 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				CD857FDE2AC058160007C2EE /* PostFlow */,
 				783520202A3F678E004E1ED1 /* App */,
 				78CD6C302A24CD6B00A76865 /* ProfileFlow */,
 				78CD6C2F2A24CD6100A76865 /* FeedFlow */,
@@ -208,6 +213,15 @@
 				78CD6C342A24EC1F00A76865 /* ProfileCoordinator.swift */,
 			);
 			path = ProfileFlow;
+			sourceTree = "<group>";
+		};
+		CD857FDE2AC058160007C2EE /* PostFlow */ = {
+			isa = PBXGroup;
+			children = (
+				CD857FE32AC059C00007C2EE /* PostViewController.swift */,
+				CD857FE42AC059C00007C2EE /* PostViewController.xib */,
+			);
+			path = PostFlow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD857FE62AC059C00007C2EE /* PostViewController.xib in Resources */,
 				781707D629EB24DD00B81E8A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +371,7 @@
 				78CD6C2B2A24BE7C00A76865 /* NavBarViewController.swift in Sources */,
 				78CD6C2D2A24CD2A00A76865 /* FeedViewController.swift in Sources */,
 				781707D129EB24DC00B81E8A /* ProfileViewController.swift in Sources */,
+				CD857FE52AC059C00007C2EE /* PostViewController.swift in Sources */,
 				783520222A3F67A4004E1ED1 /* UserAuthentication.swift in Sources */,
 				78CD6C372A24EE2000A76865 /* FeedCoordinator.swift in Sources */,
 				781707CD29EB24DC00B81E8A /* AppDelegate.swift in Sources */,

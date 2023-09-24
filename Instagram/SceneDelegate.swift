@@ -53,9 +53,9 @@ final class AppAssembly: Assembly {
             return SignInViewController()
         }
 
-        container.register(NavBarViewController.self) { r, feedVC, profileNc in
+        container.register(NavBarViewController.self) { r, feedVC, profileVc in
             let vc = NavBarViewController(feedViewController: feedVC,
-                                          profileNavigationController: profileNc)
+                                          profileViewController: profileVc)
             return vc
         }
     }
