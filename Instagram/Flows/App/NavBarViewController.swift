@@ -3,12 +3,12 @@ import UIKit
 class NavBarViewController: UITabBarController {
 
     let feedViewController: FeedViewController
-    let profileViewController: ProfileViewController
+    let profileNavigationController: UINavigationController
 
     init(feedViewController: FeedViewController,
-         profileViewController: ProfileViewController) {
+         profileNavigationController: UINavigationController) {
         self.feedViewController = feedViewController
-        self.profileViewController = profileViewController
+        self.profileNavigationController = profileNavigationController
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -24,7 +24,7 @@ class NavBarViewController: UITabBarController {
     private func setupVCs() {
         viewControllers = [
             createNavController(for: feedViewController, image: UIImage(systemName: "house")!),
-            createNavController(for: profileViewController, image: UIImage(systemName: "person")!)
+            createNavController(for: profileNavigationController, image: UIImage(systemName: "person")!)
         ]
     }
 
