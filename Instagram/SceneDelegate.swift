@@ -18,6 +18,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         appCoordinator = assembler.resolver.resolve(AppCoordinator.self, argument: navigationController)
         appCoordinator?.start()
     }
+
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+    //first launch after install
+//        handleDeepLinkUrl(URLContexts.first?.url)
+    }
 }
 
 private extension SceneDelegate {
@@ -36,17 +41,21 @@ final class AppAssembly: Assembly {
             return AppCoordinator(navigationController: navigationController, resolver: r)
         }
 
-        container.register(ProfileCoordinator.self) { (r, navigationController: UINavigationController) in
-            return ProfileCoordinator(navigationController: navigationController, resolver: r)
+        container.register(ProfileCoordinator.self) { r in
+            return ProfileCoordinator(resolver: r)
         }
 
         container.register(FeedCoordinator.self) { (r, navigationController: UINavigationController) in
             return FeedCoordinator(navigationController: navigationController, resolver: r)
         }
 
-        container.register(NavBarViewController.self) { r, feedVC, profileVc in
-            let vc = NavBarViewController(feedViewController: feedVC,
-                                          profileViewController: profileVc)
+        container.register(SignInViewController.self) { (r, navigationController: UINavigationController) in
+            return SignInViewController()
+        }
+
+        container.register(NavBarViewController.self) { r, feedNavigationController, profileNavigationController in
+            let vc = NavBarViewController(feedNavigationController: feedNavigationController,
+                                          profileNavigationController: profileNavigationController)
             return vc
         }
     }
