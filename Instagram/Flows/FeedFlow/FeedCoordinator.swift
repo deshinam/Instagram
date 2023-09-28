@@ -10,12 +10,15 @@ class FeedCoordinator {
         self.resolver = resolver
     }
 
-    func createViewController() -> FeedViewController? {
+    func createNavigationController() -> UINavigationController? {
         guard let vc = resolver.resolve(FeedViewController.self) else {
             return nil
         }
+        
+        let navController = UINavigationController(rootViewController: vc)
+        navController.tabBarItem.image =  UIImage(systemName: "house")!
 
-        return vc
+        return navController
     }
 }
 

@@ -1,14 +1,13 @@
 import UIKit
 
 class NavBarViewController: UITabBarController {
-
-    let feedViewController: FeedViewController
-    let profileViewController: ProfileViewController
-
-    init(feedViewController: FeedViewController,
-         profileViewController: ProfileViewController) {
-        self.feedViewController = feedViewController
-        self.profileViewController = profileViewController
+    let feedNavigationController: UINavigationController
+    let profileNavigationController: UINavigationController
+    
+    init(feedNavigationController: UINavigationController, 
+         profileNavigationController: UINavigationController) {
+        self.feedNavigationController = feedNavigationController
+        self.profileNavigationController = profileNavigationController
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -23,15 +22,8 @@ class NavBarViewController: UITabBarController {
 
     private func setupVCs() {
         viewControllers = [
-            createNavController(for: feedViewController, image: UIImage(systemName: "house")!),
-            createNavController(for: profileViewController, image: UIImage(systemName: "person")!)
+            feedNavigationController,
+            profileNavigationController
         ]
-    }
-
-    private func createNavController(for rootViewController: UIViewController,
-                                     image: UIImage) -> UIViewController {
-        let navController = UINavigationController(rootViewController: rootViewController)
-        navController.tabBarItem.image = image
-        return navController
     }
 }

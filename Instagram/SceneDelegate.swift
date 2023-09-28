@@ -41,8 +41,8 @@ final class AppAssembly: Assembly {
             return AppCoordinator(navigationController: navigationController, resolver: r)
         }
 
-        container.register(ProfileCoordinator.self) { (r, navigationController: UINavigationController) in
-            return ProfileCoordinator(resolver: r, navigationController: navigationController)
+        container.register(ProfileCoordinator.self) { r in
+            return ProfileCoordinator(resolver: r)
         }
 
         container.register(FeedCoordinator.self) { (r, navigationController: UINavigationController) in
@@ -53,9 +53,9 @@ final class AppAssembly: Assembly {
             return SignInViewController()
         }
 
-        container.register(NavBarViewController.self) { r, feedVC, profileVc in
-            let vc = NavBarViewController(feedViewController: feedVC,
-                                          profileViewController: profileVc)
+        container.register(NavBarViewController.self) { r, feedNavigationController, profileNavigationController in
+            let vc = NavBarViewController(feedNavigationController: feedNavigationController,
+                                          profileNavigationController: profileNavigationController)
             return vc
         }
     }

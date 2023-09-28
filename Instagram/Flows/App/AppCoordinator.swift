@@ -19,14 +19,14 @@ class AppCoordinator {
 
     func start() {
         feedCoordinator = resolver.resolve(FeedCoordinator.self, argument: UINavigationController())
-        profileCoordinator = resolver.resolve(ProfileCoordinator.self, argument: UINavigationController())
+        profileCoordinator = resolver.resolve(ProfileCoordinator.self)
 
         guard let feedCoordinator = feedCoordinator,
-              let feedVC = feedCoordinator.createViewController(),
+              let feedNavigationController = feedCoordinator.createNavigationController(),
               let profileCoordinator = profileCoordinator,
-              let profileVC = profileCoordinator.createViewController(),
+              let profileNavigationController = profileCoordinator.createNavigationController(),
               let navBarController = resolver.resolve(NavBarViewController.self,
-                                                      arguments: feedVC, profileVC) else { return }
+                                                      arguments: feedNavigationController, profileNavigationController) else { return }
         navigationController.pushViewController(navBarController, animated: false)
     }
 }

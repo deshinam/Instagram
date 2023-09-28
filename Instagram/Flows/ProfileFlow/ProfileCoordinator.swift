@@ -2,21 +2,21 @@ import Swinject
 import UIKit
 
 class ProfileCoordinator {
-    private var profileViewController: ProfileViewController?
-    private var navigationController: UINavigationController
+    private var profileNavigationController: UINavigationController?
     private var resolver: Resolver
 
-    init(resolver: Resolver, navigationController: UINavigationController) {
-        self.navigationController = navigationController
+    init(resolver: Resolver) {
         self.resolver = resolver
     }
 
-    func createViewController() -> ProfileViewController? {
+    func createNavigationController() -> UINavigationController? {
         guard let vc = resolver.resolve(ProfileViewController.self, argument: self as ProfileOutput) else {
             return nil
         }
-        profileViewController = vc
-        return vc
+        profileNavigationController = UINavigationController(rootViewController: vc)
+        profileNavigationController!.tabBarItem.image =  UIImage(systemName: "person")!
+
+        return profileNavigationController
     }
 }
 
@@ -38,11 +38,11 @@ protocol ProfileOutput {
 
 extension ProfileCoordinator: ProfileOutput {
     func openPost() {
-        guard let profileVC = profileViewController else {
+        guard let profileNavigationController = profileNavigationController else {
             return
         }
         
         let postVC = PostViewController(nibName: "PostViewController", bundle: nil)
-        profileVC.navigationController?.pushViewController(postVC, animated: true)
+        profileNavigationController.pushViewController(postVC, animated: true)
     }
 }
